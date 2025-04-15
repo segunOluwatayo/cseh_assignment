@@ -21,7 +21,7 @@ class EncryptionApp:
         self.root.minsize(*config.MIN_WINDOW_SIZE)
 
         self.style = ttk.Style()
-        self.style.theme_use('clam')
+        self.style.theme_use('vista')
 
         self.configure_styles()
 

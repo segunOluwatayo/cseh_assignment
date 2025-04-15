@@ -525,3 +525,36 @@ KeyboardInterrupt
 2025-04-15 22:27:18,346 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
 2025-04-15 22:27:18,348 - INFO - Operation: decrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
 2025-04-15 22:27:49,366 - INFO - Application shutting down... - main.py:97
+2025-04-15 22:31:33,152 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:31:33,152 - INFO - Application starting... - main.py:83
+2025-04-15 22:31:33,256 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:134
+2025-04-15 22:31:56,476 - INFO - Application shutting down... - main.py:105
+2025-04-15 22:31:59,574 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:31:59,574 - INFO - Application starting... - main.py:83
+2025-04-15 22:31:59,644 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:134
+2025-04-15 22:32:19,249 - INFO - Application shutting down... - main.py:105
+2025-04-15 22:32:21,868 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:32:21,868 - INFO - Application starting... - main.py:83
+2025-04-15 22:32:21,947 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:134
+2025-04-15 22:32:26,507 - INFO - Application shutting down... - main.py:105
+2025-04-15 22:33:25,437 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:33:25,437 - INFO - Application starting... - main.py:83
+2025-04-15 22:33:25,504 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:134
+2025-04-15 22:34:03,132 - INFO - Application shutting down... - main.py:105
+2025-04-15 22:34:07,955 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:34:07,955 - INFO - Application starting... - main.py:83
+2025-04-15 22:34:08,026 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:134
+2025-04-15 22:34:53,863 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 152, in <module>
+    exit_code = main()
+                ^^^^^^
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 137, in main
+    root.mainloop()
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 22:35:10,272 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:35:10,272 - INFO - Application starting... - main.py:83
+2025-04-15 22:35:10,339 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:134
+2025-04-15 22:35:52,003 - INFO - Application shutting down... - main.py:105
