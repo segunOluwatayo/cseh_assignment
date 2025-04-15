@@ -1,0 +1,4 @@
+2025-04-15 13:06:49,794 - INFO - Original file checksum: 1b76c230bce8c8c9a3333bb3485f3e682c5182c30bef1e21f6bf42a7b52e6ed7 - cli_test.py:44
+2025-04-15 13:06:49,794 - INFO - File encrypted successfully: test.txt - cli_test.py:64
+2025-04-15 13:09:18,114 - INFO - Backup created at: test.txt.bak - cli_test.py:94
+2025-04-15 13:09:18,114 - INFO - File decrypted successfully: test.txt - cli_test.py:113
