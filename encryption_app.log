@@ -397,3 +397,74 @@ KeyboardInterrupt
 2025-04-15 20:33:39,876 - INFO - Application starting... - main.py:75
 2025-04-15 20:33:41,205 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
 2025-04-15 20:33:46,265 - INFO - Application shutting down... - main.py:97
+2025-04-15 20:34:51,708 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 20:34:51,710 - INFO - Application starting... - main.py:75
+2025-04-15 20:34:51,793 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 20:34:56,196 - INFO - Application shutting down... - main.py:97
+2025-04-15 20:37:50,476 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 20:37:50,477 - INFO - Application starting... - main.py:75
+2025-04-15 20:37:50,548 - ERROR - Error Type: StartupError | Message: Failed to initialize application: module 'config' has no attribute 'FONT_COLOR' - log_manager.py:68
+2025-04-15 20:39:46,279 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 20:39:46,279 - INFO - Application starting... - main.py:75
+2025-04-15 20:39:47,203 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 20:40:10,995 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 20:42:02,577 - INFO - Application shutting down... - main.py:97
+2025-04-15 20:47:18,135 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 20:47:18,135 - INFO - Application starting... - main.py:75
+2025-04-15 20:47:18,213 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 20:47:39,603 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 20:47:41,711 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 20:47:41,711 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 20:47:41,711 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 20:47:41,763 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 20:47:41,763 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 20:48:05,256 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 20:48:05,260 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 20:48:05,260 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 20:48:05,268 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 20:48:05,268 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 21:41:35,404 - INFO - Application shutting down... - main.py:97
+2025-04-15 21:41:40,472 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 21:41:40,472 - INFO - Application starting... - main.py:75
+2025-04-15 21:41:40,553 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 21:41:58,525 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:03,950 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:03,950 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 21:42:03,950 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 21:42:03,972 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:03,972 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:21,180 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:21,180 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 21:42:21,180 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 21:42:21,180 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:21,180 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:28,717 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:28,720 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 21:42:28,720 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 21:42:28,720 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 21:42:28,720 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption: ValueError - log_manager.py:68
+2025-04-15 21:42:32,557 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:32,557 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 21:42:32,557 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 21:42:32,567 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:32,567 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 21:42:36,947 - INFO - Application shutting down... - main.py:97
+2025-04-15 21:43:07,443 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 21:43:07,443 - INFO - Application starting... - main.py:75
+2025-04-15 21:43:07,521 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 21:43:30,420 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:31,809 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:31,810 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 21:43:31,810 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 21:43:31,823 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:31,823 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:50,274 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:50,275 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 21:43:50,275 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 21:43:50,282 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:50,282 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 21:43:59,254 - INFO - Application shutting down... - main.py:97
+2025-04-15 21:49:35,642 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 21:49:35,642 - INFO - Application starting... - main.py:75
+2025-04-15 21:49:35,721 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 21:49:56,906 - INFO - Application shutting down... - main.py:97

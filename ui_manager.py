@@ -82,7 +82,7 @@ class EncryptionApp:
         key_entry_frame.pack(fill='x', expand=True, pady=5)
 
         self.key_var = tk.StringVar()
-        self.key_entry = ttk.Entry(key_entry_frame, textvariable=self.key_var, width=40)
+        self.key_entry = ttk.Entry(key_entry_frame, textvariable=self.key_var, width=40, show="●")
         self.key_entry.pack(side='left', fill='x', expand=True)
 
         clear_key_button = ttk.Button(key_entry_frame, text="Clear", command=lambda: self.key_var.set(""), width=8)
