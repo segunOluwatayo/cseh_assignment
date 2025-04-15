@@ -2,3 +2,32 @@
 2025-04-15 13:06:49,794 - INFO - File encrypted successfully: test.txt - cli_test.py:64
 2025-04-15 13:09:18,114 - INFO - Backup created at: test.txt.bak - cli_test.py:94
 2025-04-15 13:09:18,114 - INFO - File decrypted successfully: test.txt - cli_test.py:113
+2025-04-15 13:34:54,781 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 13:34:54,781 - INFO - ====== STARTING LOGGING INTEGRATION TESTS ====== - test_logging.py:29
+2025-04-15 13:34:54,781 - INFO - Test 1: Testing file operations logging - test_logging.py:33
+2025-04-15 13:34:54,781 - INFO - Created test file at: C:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\test_log_lvy0yamu.txt - test_logging.py:36
+2025-04-15 13:34:54,797 - INFO - Operation: read_binary performed on file: test_log_lvy0yamu.txt - log_manager.py:59
+2025-04-15 13:34:54,797 - INFO - Operation: checksum_calculated_sha256 performed on file: test_log_lvy0yamu.txt - log_manager.py:59
+2025-04-15 13:34:54,797 - INFO - Operation: backup_created performed on file: test_log_lvy0yamu.txt.bak - log_manager.py:59
+2025-04-15 13:34:54,797 - INFO - Operation: validate_access_success performed on file: test_log_lvy0yamu.txt - log_manager.py:59
+2025-04-15 13:34:54,797 - INFO - Operation: write_binary performed on file: test_log_lvy0yamu.txt - log_manager.py:59
+2025-04-15 13:34:54,797 - INFO - Test 1 completed: File operations with logging - test_logging.py:54
+2025-04-15 13:34:54,797 - INFO - Test 2: Testing crypto operations logging - test_logging.py:57
+2025-04-15 13:34:54,797 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 13:34:54,797 - WARNING - Key validation failed: not valid base64 - crypto_engine.py:90
+2025-04-15 13:34:54,797 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 13:34:54,797 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 13:34:54,856 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 13:34:54,857 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 13:34:54,857 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption - log_manager.py:68
+2025-04-15 13:34:54,857 - INFO - Expected error caught: Decryption with wrong key - test_logging.py:83
+2025-04-15 13:34:54,857 - INFO - Test 2 completed: Crypto operations with logging - test_logging.py:85
+2025-04-15 13:34:54,857 - INFO - Test 3: Testing error logging - test_logging.py:88
+2025-04-15 13:34:54,857 - ERROR - Error Type: FileNotFoundError | Message: File not found: non_existent_file.txt - log_manager.py:68
+2025-04-15 13:34:54,857 - INFO - Expected error caught: File not found - test_logging.py:94
+2025-04-15 13:34:54,862 - ERROR - Error Type: PermissionError | Message: Simulated permission denied error - log_manager.py:68
+2025-04-15 13:34:54,863 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 13:34:54,863 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption - log_manager.py:68
+2025-04-15 13:34:54,864 - INFO - Expected error caught: Corrupted data - test_logging.py:105
+2025-04-15 13:34:54,864 - INFO - Test 3 completed: Error logging - test_logging.py:107
+2025-04-15 13:34:54,865 - INFO - ====== COMPLETED LOGGING INTEGRATION TESTS ====== - test_logging.py:123
