@@ -147,3 +147,253 @@ KeyboardInterrupt
 2025-04-15 14:46:38,030 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
 2025-04-15 14:46:38,030 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption: ValueError - log_manager.py:68
 2025-04-15 14:46:56,419 - INFO - Application shutting down... - main.py:97
+2025-04-15 15:02:32,451 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 15:02:32,451 - INFO - Application starting... - main.py:75
+2025-04-15 15:02:33,674 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 15:02:49,612 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 15:03:30,216 - INFO - Application shutting down... - main.py:97
+2025-04-15 15:10:43,724 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 15:10:43,724 - INFO - Application starting... - main.py:75
+2025-04-15 15:10:43,808 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 15:11:02,420 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 15:11:08,785 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 15:11:08,785 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 15:11:08,785 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 15:11:08,820 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 15:11:08,820 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 15:11:25,916 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 15:11:25,916 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 15:11:25,916 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 15:11:25,931 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 15:11:25,931 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 15:23:27,712 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 144, in <module>
+    exit_code = main()
+                ^^^^^^
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 129, in main
+    root.mainloop()
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 15:23:41,392 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 15:23:41,392 - INFO - Application starting... - main.py:75
+2025-04-15 15:23:41,478 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 15:24:00,373 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 15:24:06,911 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 15:24:06,911 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 15:24:06,911 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 15:24:06,930 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 15:24:06,930 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 15:24:24,264 - INFO - Application shutting down... - main.py:97
+2025-04-15 17:33:12,301 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:33:12,301 - INFO - Application starting... - main.py:75
+2025-04-15 17:33:12,374 - ERROR - Error Type: StartupError | Message: Failed to initialize application: module 'config' has no attribute 'BACKGROUND_COLOR' - log_manager.py:68
+2025-04-15 17:36:52,357 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:36:52,357 - INFO - Application starting... - main.py:75
+2025-04-15 17:36:52,452 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 17:37:07,544 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:13,031 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:13,031 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 17:37:13,031 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 17:37:13,053 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:13,053 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:24,361 - INFO - Application shutting down... - main.py:97
+2025-04-15 17:37:39,357 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:37:39,357 - INFO - Application starting... - main.py:75
+2025-04-15 17:37:39,428 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 17:37:43,761 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:46,905 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:46,905 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 17:37:46,920 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 17:37:46,931 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:46,931 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:59,443 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:59,443 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 17:37:59,443 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 17:37:59,458 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:37:59,459 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 17:43:07,614 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 144, in <module>
+    # Log startup success
+            ^^^^^^
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 129, in main
+    sys.excepthook = handle_exception
+        ^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 17:43:15,520 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:43:15,536 - INFO - Application starting... - main.py:75
+2025-04-15 17:43:16,452 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 17:43:53,537 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 17:44:00,601 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:44:00,601 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 17:44:00,601 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 17:44:00,611 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:44:00,612 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 17:44:49,285 - INFO - Application shutting down... - main.py:116
+2025-04-15 17:48:36,998 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:48:36,998 - INFO - Application starting... - main.py:75
+2025-04-15 17:48:37,101 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 17:48:50,225 - INFO - Application shutting down... - main.py:97
+2025-04-15 17:51:17,030 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:51:17,030 - INFO - Application starting... - main.py:75
+2025-04-15 17:51:17,668 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 17:51:25,790 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 17:51:35,000 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:51:35,000 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 17:51:35,015 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 17:51:35,027 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:51:35,027 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 17:54:41,106 - INFO - Application shutting down... - main.py:116
+2025-04-15 17:55:29,929 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:55:29,929 - INFO - Application starting... - main.py:75
+2025-04-15 17:55:30,834 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 17:55:42,529 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 17:55:45,514 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:55:45,514 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 17:55:45,514 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 17:55:45,538 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 17:55:45,538 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 17:59:27,418 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 163, in <module>
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 148, in main
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 17:59:34,328 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 17:59:34,328 - INFO - Application starting... - main.py:75
+2025-04-15 17:59:34,410 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 17:59:53,376 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:00:05,560 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:01:58,677 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:01:58,677 - INFO - Application starting... - main.py:75
+2025-04-15 18:01:59,595 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 18:02:05,398 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:02:12,558 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:02:12,558 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:02:12,558 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:02:12,577 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:02:12,577 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:02:27,083 - INFO - Application shutting down... - main.py:116
+2025-04-15 18:03:14,696 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:03:14,696 - INFO - Application starting... - main.py:75
+2025-04-15 18:03:15,519 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 18:03:19,441 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:03:34,464 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:03:34,464 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:03:34,464 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:03:34,482 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:03:34,482 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:10:46,320 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 163, in <module>
+    exit_code = main()
+                ^^^^^^
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 148, in main
+    root.mainloop()
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 18:10:52,173 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:10:52,189 - INFO - Application starting... - main.py:75
+2025-04-15 18:10:52,858 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 18:10:57,600 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:11:01,286 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:11:01,286 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:11:01,286 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:11:01,306 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:11:01,306 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:11:26,239 - INFO - Application shutting down... - main.py:116
+2025-04-15 18:18:48,084 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:18:48,084 - INFO - Application starting... - main.py:75
+2025-04-15 18:18:48,735 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:145
+2025-04-15 18:18:54,660 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:18:55,880 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:18:55,880 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:18:55,880 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:18:55,890 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:18:55,890 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:19:12,487 - INFO - Application shutting down... - main.py:116
+2025-04-15 18:22:06,367 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:22:06,368 - INFO - Application starting... - main.py:75
+2025-04-15 18:22:06,444 - ERROR - Error Type: StartupError | Message: Failed to initialize application: module 'config' has no attribute 'BUTTON_COLOR' - log_manager.py:68
+2025-04-15 18:24:30,111 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:24:30,111 - INFO - Application starting... - main.py:75
+2025-04-15 18:24:30,181 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:24:43,125 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:24:45,434 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:24:45,434 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:24:45,434 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:24:45,451 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:24:45,451 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:13,602 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:13,602 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 18:25:13,602 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 18:25:13,618 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:13,618 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:49,597 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:51,130 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:51,146 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:25:51,146 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:25:51,157 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:25:51,159 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:26:07,073 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:26:07,073 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 18:26:07,088 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 18:26:07,095 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:26:07,095 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:26:40,222 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:28:05,130 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:28:05,130 - INFO - Application starting... - main.py:75
+2025-04-15 18:28:05,209 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:28:18,728 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:45:33,559 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:45:33,559 - INFO - Application starting... - main.py:75
+2025-04-15 18:45:33,667 - ERROR - Error Type: StartupError | Message: Failed to initialize application: module 'config' has no attribute 'THEME_COLOR' - log_manager.py:68
+2025-04-15 18:46:35,437 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:46:35,437 - INFO - Application starting... - main.py:75
+2025-04-15 18:46:35,567 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:46:43,366 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 18:46:48,150 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:46:48,154 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 18:46:48,154 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 18:46:48,200 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:46:48,200 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:46:59,333 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:46:59,333 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 18:46:59,348 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 18:46:59,356 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 18:46:59,356 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 18:47:48,327 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:47:59,032 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:47:59,032 - INFO - Application starting... - main.py:75
+2025-04-15 18:47:59,162 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:50:16,927 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:50:21,220 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:50:21,220 - INFO - Application starting... - main.py:75
+2025-04-15 18:50:21,335 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:50:28,601 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:52:31,013 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:52:31,013 - INFO - Application starting... - main.py:75
+2025-04-15 18:52:31,115 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:55:16,580 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:55:22,230 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:55:22,230 - INFO - Application starting... - main.py:75
+2025-04-15 18:55:22,355 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:56:22,249 - INFO - Application shutting down... - main.py:97
+2025-04-15 18:56:25,283 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 18:56:25,283 - INFO - Application starting... - main.py:75
+2025-04-15 18:56:25,398 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 18:59:21,910 - INFO - Application shutting down... - main.py:97
+2025-04-15 19:05:06,572 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 19:05:06,572 - INFO - Application starting... - main.py:75
+2025-04-15 19:05:06,718 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 19:05:15,545 - INFO - Application shutting down... - main.py:97
+2025-04-15 20:33:39,874 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 20:33:39,876 - INFO - Application starting... - main.py:75
+2025-04-15 20:33:41,205 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 20:33:46,265 - INFO - Application shutting down... - main.py:97
