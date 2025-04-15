@@ -14,6 +14,16 @@ import config
 from log_manager import initialize_logger, logger, log_error
 from ui_manager import EncryptionApp
 
+def set_dpi_awareness():
+    try:
+        from ctypes import windll
+        windll.shcore.SetProcessDpiAwareness(1)  # Process is DPI aware
+    except:
+        try:
+            windll.user32.SetProcessDPIAware()  # Fallback for older Windows
+        except:
+            pass  # Not on Windows or DPI functions not available
+
 def check_environment():
     """
     Performs startup checks to ensure the application can run properly:
@@ -70,6 +80,7 @@ def initialize_application():
     """
     Sets up the application
     """
+    set_dpi_awareness()
     # Initialize logging first
     initialize_logger()
     logger.info("Application starting...")

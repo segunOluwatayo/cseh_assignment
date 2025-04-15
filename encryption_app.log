@@ -614,3 +614,64 @@ KeyboardInterrupt
 2025-04-15 22:47:55,356 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
 2025-04-15 22:47:55,356 - INFO - Operation: decrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
 2025-04-15 22:48:30,545 - INFO - Application shutting down... - main.py:97
+2025-04-15 22:54:37,668 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:54:37,668 - INFO - Application starting... - main.py:75
+2025-04-15 22:54:37,745 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 22:56:24,500 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 144, in <module>
+    if 'logger' in globals() and logger:
+            ^^^^^^
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 129, in main
+    )
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 22:56:36,005 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 22:56:36,005 - INFO - Application starting... - main.py:86
+2025-04-15 22:56:36,098 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:137
+2025-04-15 22:56:49,508 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 22:56:49,508 - INFO - Operation: validate_access_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 22:56:50,881 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 22:56:50,901 - INFO - Operation: read_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 22:56:50,901 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 22:56:50,901 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 22:56:50,916 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 22:56:50,916 - INFO - Operation: encrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:00:57,809 - INFO - Application shutting down... - main.py:108
+2025-04-15 23:01:06,488 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 23:01:06,489 - INFO - Application starting... - main.py:86
+2025-04-15 23:01:06,560 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:137
+2025-04-15 23:01:17,430 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:17,430 - INFO - Operation: validate_access_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:23,017 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:23,033 - INFO - Operation: read_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:23,033 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 23:01:23,034 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 23:01:23,049 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:23,049 - INFO - Operation: encrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:40,491 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:40,508 - INFO - Operation: read_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:40,511 - INFO - Operation: backup_created performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf.bak - log_manager.py:59
+2025-04-15 23:01:40,511 - INFO - Operation: backup performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf.bak - log_manager.py:59
+2025-04-15 23:01:40,522 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:40,522 - INFO - Operation: decrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:01:44,740 - INFO - Application shutting down... - main.py:108
+2025-04-15 23:02:07,873 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 23:02:07,873 - INFO - Application starting... - main.py:86
+2025-04-15 23:02:07,961 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:137
+2025-04-15 23:02:12,101 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:12,101 - INFO - Operation: validate_access_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:16,005 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:16,021 - INFO - Operation: read_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:16,022 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 23:02:16,022 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 23:02:16,041 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:16,041 - INFO - Operation: encrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:42,425 - INFO - Operation: validate_filetype_success performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:42,440 - INFO - Operation: read_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:42,442 - INFO - Operation: backup_created performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf.bak - log_manager.py:59
+2025-04-15 23:02:42,442 - INFO - Operation: backup performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf.bak - log_manager.py:59
+2025-04-15 23:02:42,454 - INFO - Operation: write_binary performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:02:42,454 - INFO - Operation: decrypt performed on file: The Problems of Philosophy (Bertrand Russell) (Z-Library).pdf - log_manager.py:59
+2025-04-15 23:03:11,177 - INFO - Application shutting down... - main.py:108
