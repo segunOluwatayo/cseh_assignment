@@ -6,20 +6,13 @@ This module initializes all components and launches the GUI.
 import os
 import sys
 import traceback
-import ctypes
 import tkinter as tk
 from tkinter import messagebox
+
+# Import application modules
 import config
 from log_manager import initialize_logger, logger, log_error
 from ui_manager import EncryptionApp
-
-def set_dpi_awareness():
-    try:
-        # For Windows 8.1 and later
-        ctypes.windll.shcore.SetProcessDpiAwareness(1)
-    except AttributeError:
-        # For Windows 8.0 and earlier
-        ctypes.windll.user32.SetProcessDPIAware()
 
 def check_environment():
     """
@@ -77,7 +70,6 @@ def initialize_application():
     """
     Sets up the application
     """
-    set_dpi_awareness()
     # Initialize logging first
     initialize_logger()
     logger.info("Application starting...")
