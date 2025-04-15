@@ -31,3 +31,89 @@
 2025-04-15 13:34:54,864 - INFO - Expected error caught: Corrupted data - test_logging.py:105
 2025-04-15 13:34:54,864 - INFO - Test 3 completed: Error logging - test_logging.py:107
 2025-04-15 13:34:54,865 - INFO - ====== COMPLETED LOGGING INTEGRATION TESTS ====== - test_logging.py:123
+2025-04-15 14:17:18,091 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 14:17:18,091 - INFO - Application starting... - main.py:75
+2025-04-15 14:17:18,668 - INFO - Application initialized successfully. Version: Unknown - main.py:126
+2025-04-15 14:18:00,338 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 14:18:22,182 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:18:22,185 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:18:22,185 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:18:22,235 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:18:22,235 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:18:59,445 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:18:59,445 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:18:59,460 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:18:59,464 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:18:59,464 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:19:10,541 - INFO - Application shutting down... - main.py:97
+2025-04-15 14:20:14,501 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 14:20:14,501 - INFO - Application starting... - main.py:75
+2025-04-15 14:20:14,577 - INFO - Application initialized successfully. Version: Unknown - main.py:126
+2025-04-15 14:20:25,658 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 14:20:27,424 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:20:27,424 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:20:27,424 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:20:27,454 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:20:27,454 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:20:42,343 - INFO - Application shutting down... - main.py:97
+2025-04-15 14:23:45,541 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 14:23:45,541 - INFO - Application starting... - main.py:75
+2025-04-15 14:23:45,613 - INFO - Application initialized successfully. Version: Unknown - main.py:126
+2025-04-15 14:24:10,772 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 14:24:12,664 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:24:12,666 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:24:12,666 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:24:12,710 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:24:12,710 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:24:17,287 - INFO - Application shutting down... - main.py:97
+2025-04-15 14:26:41,586 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 14:26:41,587 - INFO - Application starting... - main.py:75
+2025-04-15 14:26:41,652 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 14:26:55,099 - INFO - Application shutting down... - main.py:97
+2025-04-15 14:30:10,570 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 14:30:10,570 - INFO - Application starting... - main.py:75
+2025-04-15 14:30:10,653 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 14:30:17,681 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 14:30:19,014 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:30:19,014 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:30:19,019 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:30:19,029 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:30:19,029 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:30:56,122 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:30:56,138 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 14:30:56,139 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 14:30:56,141 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:30:56,142 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:33:29,559 - INFO - Operation: validate_access_success performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:33:37,451 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:33:37,451 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:33:37,453 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:33:37,457 - INFO - Operation: write_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:33:37,457 - INFO - Operation: encrypt performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:33:52,960 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:33:52,962 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 14:33:52,962 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption - log_manager.py:68
+2025-04-15 14:33:52,962 - ERROR - Error Type: decryption_error | Message: Decryption failed. Possibly due to an incorrect key or corrupted data. - log_manager.py:68
+2025-04-15 14:34:01,987 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:02,003 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 14:34:02,003 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption - log_manager.py:68
+2025-04-15 14:34:02,003 - ERROR - Error Type: decryption_error | Message: Decryption failed. Possibly due to an incorrect key or corrupted data. - log_manager.py:68
+2025-04-15 14:34:19,709 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:19,709 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:34:19,709 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:34:19,740 - INFO - Operation: write_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:19,756 - INFO - Operation: encrypt performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:30,325 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:30,341 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 14:34:30,341 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption - log_manager.py:68
+2025-04-15 14:34:30,341 - ERROR - Error Type: decryption_error | Message: Decryption failed. Possibly due to an incorrect key or corrupted data. - log_manager.py:68
+2025-04-15 14:34:33,953 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:33,953 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:34:33,964 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:34:33,996 - INFO - Operation: write_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:33,996 - INFO - Operation: encrypt performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:44,132 - INFO - Operation: read_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:44,132 - INFO - Operation: backup_created performed on file: This is a test file.txt.bak - log_manager.py:59
+2025-04-15 14:34:44,132 - INFO - Operation: backup performed on file: This is a test file.txt.bak - log_manager.py:59
+2025-04-15 14:34:44,132 - INFO - Operation: write_binary performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:34:44,132 - INFO - Operation: decrypt performed on file: This is a test file.txt - log_manager.py:59
