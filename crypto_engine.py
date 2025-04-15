@@ -32,13 +32,15 @@ def encrypt_data(data, key=None):
             logger.info("Using provided encryption key")
         
         # Create a Fernet object with the given key. 
-        fernet = Fernet(key.encode('utf-8'))
+        # Ensure key is properly formatted
+        key_bytes = key.encode('utf-8')
+        fernet = Fernet(key_bytes)
         encrypted_data = fernet.encrypt(data)
         logger.info(f"Data encrypted successfully: {len(data)} bytes → {len(encrypted_data)} bytes")
         return encrypted_data, key
     except Exception as e:
         # Don't log the actual key or exception details that might contain sensitive info
-        log_error("Encryption operation failed", "EncryptionError")
+        log_error(f"Encryption operation failed: {type(e).__name__}", "EncryptionError")
         raise
 
 def decrypt_data(encrypted_data, key):
@@ -46,23 +48,29 @@ def decrypt_data(encrypted_data, key):
     Decrypts encrypted binary data using the provided decryption key.
     """
     try:
+        # Clean the key by removing any whitespace
+        key = key.strip()
+        
         if not validate_decryption_key(key):
             log_error("Invalid decryption key format", "KeyValidationError")
             raise ValueError("Invalid decryption key provided.")
         
-        fernet = Fernet(key.encode('utf-8'))
+        # Ensure key is properly encoded
+        key_bytes = key.encode('utf-8')
+        fernet = Fernet(key_bytes)
+        
         try:
             decrypted_data = fernet.decrypt(encrypted_data)
             logger.info(f"Data decrypted successfully: {len(encrypted_data)} bytes → {len(decrypted_data)} bytes")
             return decrypted_data
-        except InvalidToken:
+        except InvalidToken as it:
             # Log the error without exposing the key
             log_error("Decryption failed - Invalid token", "DecryptionError")
             # Raise an informative error that does not leak sensitive details
-            raise ValueError("Decryption failed. Possibly due to an incorrect key or corrupted data.")
+            raise ValueError("Decryption failed. The key may be incorrect or the data is corrupted.")
     except Exception as e:
         if not isinstance(e, ValueError) or "Invalid decryption key provided" not in str(e):
-            log_error("Unexpected error during decryption", "DecryptionError")
+            log_error(f"Unexpected error during decryption: {type(e).__name__}", "DecryptionError")
         raise
 
 def validate_decryption_key(key):
@@ -73,6 +81,9 @@ def validate_decryption_key(key):
     if not isinstance(key, str):
         logger.warning("Key validation failed: not a string")
         return False
+    
+    # Clean up the key - remove any whitespace
+    key = key.strip()
     
     try:
         # Attempt to decode the key; this ensures it is properly base64 encoded
@@ -86,6 +97,6 @@ def validate_decryption_key(key):
         else:
             logger.warning(f"Key validation failed: incorrect length ({len(decoded)} bytes instead of 32)")
         return result
-    except Exception:
-        logger.warning("Key validation failed: not valid base64")
+    except Exception as e:
+        logger.warning(f"Key validation failed: not valid base64. Error: {type(e).__name__}")
         return False

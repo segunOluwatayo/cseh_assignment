@@ -117,3 +117,33 @@
 2025-04-15 14:34:44,132 - INFO - Operation: backup performed on file: This is a test file.txt.bak - log_manager.py:59
 2025-04-15 14:34:44,132 - INFO - Operation: write_binary performed on file: This is a test file.txt - log_manager.py:59
 2025-04-15 14:34:44,132 - INFO - Operation: decrypt performed on file: This is a test file.txt - log_manager.py:59
+2025-04-15 14:44:42,389 - ERROR - Error Type: CriticalError | Message: Unhandled exception: Traceback (most recent call last):
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 144, in <module>
+    exit_code = main()
+                ^^^^^^
+  File "c:\Users\oluwa\Documents\Griffith College Year 4 Sem 2\CSEH\Assignment\cseh_assignment\main.py", line 129, in main
+    root.mainloop()
+  File "C:\Python312\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+ - log_manager.py:68
+2025-04-15 14:44:55,855 - INFO - Logger initialized with rotating file handler. - log_manager.py:49
+2025-04-15 14:44:55,855 - INFO - Application starting... - main.py:75
+2025-04-15 14:44:55,932 - INFO - Application initialized successfully. Version: 1.0.0 - main.py:126
+2025-04-15 14:45:14,624 - INFO - Operation: validate_access_success performed on file: test.txt - log_manager.py:59
+2025-04-15 14:45:18,997 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:45:18,997 - INFO - New encryption key generated - crypto_engine.py:17
+2025-04-15 14:45:18,997 - INFO - Using newly generated encryption key - crypto_engine.py:27
+2025-04-15 14:45:19,015 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:45:19,015 - INFO - Operation: encrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:45:39,630 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:45:39,630 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 14:45:39,630 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 14:45:39,645 - INFO - Operation: write_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:45:39,645 - INFO - Operation: decrypt performed on file: test.txt - log_manager.py:59
+2025-04-15 14:46:38,016 - INFO - Operation: read_binary performed on file: test.txt - log_manager.py:59
+2025-04-15 14:46:38,016 - INFO - Operation: backup_created performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 14:46:38,016 - INFO - Operation: backup performed on file: test.txt.bak - log_manager.py:59
+2025-04-15 14:46:38,030 - ERROR - Error Type: DecryptionError | Message: Decryption failed - Invalid token - log_manager.py:68
+2025-04-15 14:46:38,030 - ERROR - Error Type: DecryptionError | Message: Unexpected error during decryption: ValueError - log_manager.py:68
+2025-04-15 14:46:56,419 - INFO - Application shutting down... - main.py:97

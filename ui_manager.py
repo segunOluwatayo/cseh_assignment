@@ -109,7 +109,7 @@ class EncryptionApp:
 
     def decrypt_file(self):
         """
-        Handles the decryption process
+        Handles the decryption process with improved key handling
         """
         if not self.file_path:
             self.show_error_message("No file selected for decryption.")
@@ -120,16 +120,38 @@ class EncryptionApp:
             self.show_error_message("Please enter the decryption key.")
             return
 
+        # Validate key format before attempting decryption
+        if not crypto_engine.validate_decryption_key(key):
+            self.show_error_message(
+                "The decryption key appears to be invalid.\n"
+                "Please make sure you've copied the entire key correctly."
+            )
+            return
+
         self.update_status(config.STATUS_DECRYPTING)
         try:
             # Read encrypted file data
             encrypted_data = file_handler.read_file_binary(self.file_path)
-            # Decrypt the data
-            decrypted_data = crypto_engine.decrypt_data(encrypted_data, key)
-            # Create a backup if enabled
+            
+            # Create a backup before attempting decryption
             if config.BACKUP_ENABLED:
                 backup_path = file_handler.create_backup(self.file_path)
                 log_manager.log_operation(backup_path, "backup")
+                
+            # Decrypt the data
+            try:
+                decrypted_data = crypto_engine.decrypt_data(encrypted_data, key)
+            except ValueError as e:
+                # Handle decryption failure specifically
+                self.show_error_message(
+                    "Decryption failed. This usually means:\n"
+                    "1. The key is incorrect\n"
+                    "2. The file has been corrupted\n"
+                    "3. The file is not encrypted\n\n"
+                    "Check if you copied the entire key correctly."
+                )
+                return
+                
             # Write the decrypted data back to file
             if file_handler.write_file_binary(self.file_path, decrypted_data):
                 log_manager.log_operation(self.file_path, "decrypt")
@@ -139,7 +161,7 @@ class EncryptionApp:
                 self.show_error_message("Failed to write decrypted data to file.")
         except Exception as e:
             log_manager.log_error(str(e), "decryption_error")
-            self.show_error_message("Decryption failed: " + str(e))
+            self.show_error_message(f"Decryption failed: {str(e)}")
 
     def display_key(self, key):
         """
@@ -148,20 +170,63 @@ class EncryptionApp:
         """
         key_window = tk.Toplevel(self.root)
         key_window.title("Decryption Key")
-        key_window.geometry("400x100")
+        key_window.geometry("500x200")
+        key_window.configure(bg=config.THEME_COLOR)
         
-        instruction = tk.Label(key_window, text="This is your decryption key. Please save it securely:")
+        # Make window modal to force attention
+        key_window.transient(self.root)
+        key_window.grab_set()
+        
+        warning_label = tk.Label(
+            key_window, 
+            text="WARNING: Save this key in a secure location!\nYou will need it to decrypt your file later.",
+            fg="red",
+            bg=config.THEME_COLOR,
+            font=("Arial", 10, "bold")
+        )
+        warning_label.pack(pady=10)
+        
+        instruction = tk.Label(
+            key_window, 
+            text="This is your decryption key:",
+            bg=config.THEME_COLOR
+        )
         instruction.pack(pady=5)
         
-        key_entry = tk.Entry(key_window, width=50)
-        key_entry.insert(0, key)
-        key_entry.config(state='readonly')
-        key_entry.pack(pady=5)
+        # Use a Text widget for better visibility and selection
+        key_text = tk.Text(key_window, height=2, width=60)
+        key_text.insert("1.0", key)
+        key_text.config(state='normal', bg="white", fg="black")
+        key_text.pack(pady=5, padx=20)
         
-        copy_button = tk.Button(key_window, text="Copy to Clipboard", command=lambda: self.root.clipboard_append(key))
+        # Select all text by default for easier copying
+        key_text.tag_add("sel", "1.0", "end")
+        key_text.focus_set()
+        
+        def copy_to_clipboard():
+            # Clear clipboard and add the key
+            self.root.clipboard_clear()
+            self.root.clipboard_append(key)
+            confirm_label.config(text="Key copied to clipboard!")
+        
+        copy_button = tk.Button(
+            key_window, 
+            text="Copy to Clipboard",
+            command=copy_to_clipboard
+        )
         copy_button.pack(pady=5)
         
-        # Automatically dismiss the key window after timeout
+        confirm_label = tk.Label(key_window, text="", bg=config.THEME_COLOR)
+        confirm_label.pack(pady=5)
+        
+        close_button = tk.Button(
+            key_window, 
+            text="I've Saved My Key", 
+            command=key_window.destroy
+        )
+        close_button.pack(pady=5)
+        
+        # Auto-dismiss the key window after timeout
         key_window.after(config.KEY_DISPLAY_TIMEOUT_SECONDS * 1000, key_window.destroy)
 
     def show_error_message(self, message):
