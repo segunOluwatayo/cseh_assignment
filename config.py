@@ -1,5 +1,8 @@
 import os
 
+# === Application Information ===
+APP_VERSION = "1.0.0"  # Version information for logging and display
+
 # === Logging Configuration ===
 LOG_FILE_PATH = os.path.join(os.getcwd(), "encryption_app.log")
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s - %(filename)s:%(lineno)d"

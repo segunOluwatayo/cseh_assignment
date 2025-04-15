@@ -99,8 +99,8 @@ class EncryptionApp:
             if file_handler.write_file_binary(self.file_path, encrypted_data):
                 log_manager.log_operation(self.file_path, "encrypt")
                 self.update_status(config.STATUS_SUCCESS_ENCRYPT)
-                self.display_key(key)
                 self.show_success_message("File encrypted successfully. SAVE YOUR DECRYPTION KEY!")
+                self.display_key(key)
             else:
                 self.show_error_message("Failed to write encrypted data to file.")
         except Exception as e:
@@ -181,10 +181,6 @@ class EncryptionApp:
     def update_status(self, status_text, is_error=False):
         """
         Updates the status label in the main window.
-        
-        Parameters:
-            status_text (str): The status message to display.
-            is_error (bool): Whether the update indicates an error (affects text color).
         """
         color = config.ERROR_COLOR if is_error else config.SUCCESS_COLOR
         self.status_label.config(text=status_text, fg=color)
