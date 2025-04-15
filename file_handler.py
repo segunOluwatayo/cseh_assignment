@@ -9,6 +9,7 @@ import os
 import hashlib
 import shutil
 import tempfile
+import config
 from log_manager import log_error, log_operation
 
 def read_file_binary(file_path):
@@ -103,3 +104,24 @@ def create_backup(file_path):
     except Exception as error:
         log_error(f"Backup creation failed for {file_path}", "BackupError")
         return None
+    
+def validate_file_type(file_path):
+    """
+    Checks if the file extension is in the list of supported file types.
+    Returns a tuple (is_valid, message) where:
+    - is_valid: Boolean indicating whether the file type is supported
+    - message: A descriptive message for the user
+    """
+    if not file_path:
+        return False, "No file selected."
+        
+    file_extension = os.path.splitext(file_path)[1].lower()
+    
+    if file_extension in config.SUPPORTED_EXTENSIONS:
+        log_operation(file_path, "validate_filetype_success")
+        return True, "File type supported."
+    else:
+        supported_ext_str = ", ".join(config.SUPPORTED_EXTENSIONS)
+        message = config.ERROR_UNSUPPORTED_FILE_TYPE.format(supported_ext_str)
+        log_error(f"Unsupported file type: {file_extension} for file {os.path.basename(file_path)}", "FileTypeError")
+        return False, message

@@ -27,6 +27,12 @@ def encrypt_file(file_path):
         log_error(f"File not found: {file_path}", "FileNotFoundError")
         return False, f"Error: {config.ERROR_FILE_NOT_FOUND}"
     
+    # Check file type
+    is_supported, message = file_handler.validate_file_type(file_path)
+    if not is_supported:
+        log_error(f"Unsupported file type: {file_path}", "FileTypeError")
+        return False, message
+    
     if not file_handler.validate_file_access(file_path):
         log_error(f"Cannot access file: {file_path}", "AccessError")
         return False, f"Error: {config.ERROR_PERMISSION_DENIED}"
@@ -69,6 +75,12 @@ def decrypt_file(file_path, key):
         log_error(f"File not found: {file_path}", "FileNotFoundError")
         return False, f"Error: {config.ERROR_FILE_NOT_FOUND}"
     
+    # Check file type
+    is_supported, message = file_handler.validate_file_type(file_path)
+    if not is_supported:
+        log_error(f"Unsupported file type: {file_path}", "FileTypeError")
+        return False, message
+    
     if not file_handler.validate_file_access(file_path):
         log_error(f"Cannot access file: {file_path}", "AccessError")
         return False, f"Error: {config.ERROR_PERMISSION_DENIED}"
@@ -108,7 +120,7 @@ def decrypt_file(file_path, key):
     except Exception as e:
         log_error(f"Decryption failed: {str(e)}", "DecryptionProcessError")
         return False, f"Error: Decryption failed - {str(e)}"
-
+    
 def main():
     """
     Main function that processes command-line arguments and executes the 

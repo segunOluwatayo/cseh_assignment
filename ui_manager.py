@@ -112,6 +112,13 @@ class EncryptionApp:
     def browse_for_file(self):
         file_path = filedialog.askopenfilename(filetypes=config.SUPPORTED_FILE_TYPES)
         if file_path:
+            # First check if the file type is supported
+            is_supported, message = file_handler.validate_file_type(file_path)
+            if not is_supported:
+                self.show_error_message(message)
+                return
+                
+            # Then check if the file is accessible
             if file_handler.validate_file_access(file_path):
                 self.file_path = file_path
                 self.file_path_var.set(file_path)
@@ -122,6 +129,12 @@ class EncryptionApp:
     def encrypt_file(self):
         if not self.file_path:
             self.show_error_message(config.ERROR_NO_FILE_SELECTED_ENCRYPT)
+            return
+            
+        # Validate file type before proceeding
+        is_supported, message = file_handler.validate_file_type(self.file_path)
+        if not is_supported:
+            self.show_error_message(message)
             return
 
         self.update_status(config.STATUS_ENCRYPTING)
@@ -143,6 +156,12 @@ class EncryptionApp:
     def decrypt_file(self):
         if not self.file_path:
             self.show_error_message(config.ERROR_NO_FILE_SELECTED_DECRYPT)
+            return
+            
+        # Validate file type before proceeding
+        is_supported, message = file_handler.validate_file_type(self.file_path)
+        if not is_supported:
+            self.show_error_message(message)
             return
 
         key = self.key_var.get().strip()

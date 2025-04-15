@@ -89,6 +89,18 @@ ERROR_EMPTY_KEY = "Please enter the decryption key."
 # === File Support ===
 SUPPORTED_FILE_TYPES = [("All Files", "*.*")]
 
+# Define a list of supported extensions for programmatic checking
+SUPPORTED_EXTENSIONS = [
+    ".txt", 
+    ".pdf", 
+    ".jpg", ".jpeg", ".png", ".gif",
+    ".doc", ".docx", ".odt",
+    ".xls", ".xlsx", ".csv"
+]
+
+# Update the error message for unsupported file types
+ERROR_UNSUPPORTED_FILE_TYPE = "This file type is not supported. Please select a file with one of the following extensions: {}"
+
 # === Key Display Colors ===
 POPUP_BG_COLOR = "#ffffff"
 KEY_BG_COLOR = "#f0f8ff"
