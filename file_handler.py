@@ -37,7 +37,6 @@ def write_file_binary(file_path, data):
     directory = os.path.dirname(file_path)
     temp_file = None
     try:
-        # Create a temporary file in the same directory to ensure atomic replacement
         temp_file = tempfile.NamedTemporaryFile(delete=False, dir=directory)
         temp_file.write(data)
         temp_file.close()

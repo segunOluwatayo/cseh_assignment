@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Minimal Command-Line Interface for testing the Encryption/Decryption Tool's core functionality.
 This script allows testing of key generation, file encryption/decryption, and file handling 
@@ -8,8 +7,6 @@ without the GUI components.
 import os
 import sys
 from argparse import ArgumentParser
-
-# Import the modules
 import config
 import crypto_engine
 import file_handler
@@ -22,12 +19,10 @@ def encrypt_file(file_path):
     """
     Encrypts the specified file and displays the decryption key.
     """
-    # Validate file first
     if not os.path.exists(file_path):
         log_error(f"File not found: {file_path}", "FileNotFoundError")
         return False, f"Error: {config.ERROR_FILE_NOT_FOUND}"
-    
-    # Check file type
+
     is_supported, message = file_handler.validate_file_type(file_path)
     if not is_supported:
         log_error(f"Unsupported file type: {file_path}", "FileTypeError")
@@ -42,19 +37,15 @@ def encrypt_file(file_path):
     logger.info(f"Original file checksum: {original_checksum}")
     
     try:
-        # Read file content
         file_data = file_handler.read_file_binary(file_path)
         file_size_mb = len(file_data) / (1024 * 1024)
-        
-        # Check file size
+
         if file_size_mb > config.MAX_FILE_SIZE_MB:
             log_error(f"File too large: {file_size_mb}MB exceeds limit of {config.MAX_FILE_SIZE_MB}MB", "FileSizeError")
             return False, f"Error: {config.ERROR_FILE_TOO_LARGE}"
-        
-        # Encrypt data
+
         encrypted_data, key = crypto_engine.encrypt_data(file_data)
-        
-        # Write encrypted data back to file
+
         if not file_handler.write_file_binary(file_path, encrypted_data):
             log_error(f"Failed to write encrypted data to {file_path}", "WriteError")
             return False, "Error: Failed to write encrypted data to file."
@@ -98,11 +89,9 @@ def decrypt_file(file_path, key):
                 logger.info(f"Backup created at: {backup_path}")
             else:
                 logger.warning("Failed to create backup")
-        
-        # Read encrypted file
+
         encrypted_data = file_handler.read_file_binary(file_path)
-        
-        # Decrypt data
+
         try:
             decrypted_data = crypto_engine.decrypt_data(encrypted_data, key)
         except ValueError as e:
@@ -136,8 +125,7 @@ def main():
     parser.add_argument("-k", "--key", help="Decryption key (required for decryption)")
     
     args = parser.parse_args()
-    
-    # Log the operation being attempted
+
     logger.info(f"CLI operation requested: {'encryption' if args.encrypt else 'decryption'} on file {args.file}")
     
     # Check if file exists

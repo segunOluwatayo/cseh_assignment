@@ -10,7 +10,6 @@ from logging.handlers import RotatingFileHandler
 import config 
 import re
 
-# Create a module-level logger instance.
 logger = logging.getLogger("EncryptionAppLogger")
 logger.setLevel(logging.INFO)
 
@@ -41,7 +40,6 @@ def initialize_logger():
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 
-    # Optionally add a stream handler for console output
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
@@ -62,7 +60,6 @@ def log_error(error_message, error_type):
     """
     Logs an error message with its associated type, ensuring sensitive data is not exposed.
     """
-    # Sanitize by removing potential key-like patterns
     sanitized_message = re.sub(r'[A-Za-z0-9+/=]{32,}', '[REDACTED_POTENTIAL_KEY]', str(error_message))
     
     logger.error(f"Error Type: {error_type} | Message: {sanitized_message}")

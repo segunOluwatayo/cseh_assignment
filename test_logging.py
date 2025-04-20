@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Script to test the logging integration across all modules.
 This script performs various operations to ensure proper logging is in place.
@@ -24,7 +23,6 @@ def create_test_file(content, directory=None):
 
 def run_log_tests():
     """Run a series of tests to verify logging functionality."""
-    # Initialize the logger
     initialize_logger()
     logger.info("====== STARTING LOGGING INTEGRATION TESTS ======")
     
